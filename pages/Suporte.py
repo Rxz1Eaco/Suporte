@@ -9,7 +9,7 @@ st.info("Destina para analisar o cenário entre o dia 01/10 - 31/10")
 st.sidebar.write("Desenvolvido por [Éaco Rocha](https://github.com/Rxz1Eaco)")
 
 with st.expander('Data'):
-    df = pd.read_excel("dadossuporte.xlsx")
+    df = pd.read_excel("sup.xlsx")
     df = df.drop([494, 495]) # REMOVENDO LINHAS EM BRANCO
     Linhas , Colunas = df.shape
     st.write(f"A base de dados tem um Total de {Linhas} Linhas e um Total de {Colunas} Colunas ")
